@@ -1,0 +1,36 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{\textbf{Computational Evaluation of Algebraic and Geometric Series Using Iterative Loops}}
+\author{Aparajita Chakraborty \\ Bsc Physics Honors}
+\date{27 May, 2026 }
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report presents the mathematical formulation and algorithmic implementation for evaluating finite series expansions. Specifically, we examine the computational execution of a cumulative summation loop, and a sequential product loop, designed to run natively without reliance on external mathematical packages.
+
+\section{Mathematical Formulations}
+In computational physics, continuous mathematical expressions are often evaluated discretely using bounded loops.
+
+\subsection{Summation Series}
+A standard finite arithmetic or geometric progression can be represented by the summation of discrete terms where $i$ is in the loop index:
+\begin{equation}
+	S_n = \sum_{i=1}^{n} f{i}
+\end{equation}
+The algorithm initializes an accumulator variable $S = 0$ and sequentially adds the value of $f(i)$ at each step.
+
+\subsection{Product Series}
+Similarly, a bounded product series (such as a factorial sequence or product expansion) multiplies terms sequentially:
+\begin{equation}
+	P_n = \prod_{i=1}^{n} f(i)
+\end{equation}
+The computational tracking variable must be initialized to $P = 1$ ( the multiplicative identity) to avoid annihilating the product array during iteration.
+
+\section{Conclusion}
+By utilizing primitive conditional loops, we successfully mapped formal mathematical $\sum$ and $prod$ operations into executable Python logic, providing a foundation for evaluating more complex discrete physical systems.
+\end{document}
